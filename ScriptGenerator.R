@@ -6,12 +6,12 @@
 # Please enter the location of the folder from which you are
 # running this script (which should also contain the xDatasets
 # and xInputFiles subfolders)
-ScriptFolder <- '/Volumes/T3/mplusanalyzer'
+ScriptFolder <- '/home/zald/zero-cases-pfactor'
 
 # Specify the TARGET folder where you would like to generate
 # the analysis setup. This does not need to be where you
 # eventually run it!
-TargetFolderRoot <- '/Volumes/T3/local'
+TargetFolderRoot <- '/home/zald/zero-cases-pfactor/analyses'
 
 # Specify the path to the location where you will be
 # RUNNING the scripts. If doing it on a cluster, then

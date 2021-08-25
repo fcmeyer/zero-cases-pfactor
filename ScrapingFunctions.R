@@ -587,7 +587,8 @@ scrapeSim_Helper <- function(SimResults,SimPrefix,crosswalk_dx,facs,phis,doDifft
       errmsg <- ""
     }
     
-    if (errmsg != "" & !(startsWith(errmsg,"FACTOR SCORES COULD NOT BE COMPUTED."))) {
+    if (errmsg != "" & !(startsWith(errmsg,"FACTOR SCORES COULD NOT BE COMPUTED.") |
+                         startsWith(errmsg, "THIS ANALYSIS MAY HAVE MULTIPLE SOLUTIONS"))) {
       SimResults[1,'errs'] <- errmsg
     } else {
       # If we've made it here, then the model was estimated. Yay!
